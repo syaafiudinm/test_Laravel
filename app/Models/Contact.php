@@ -5,15 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Student extends Model
+class Contact extends Model
 {
     use HasFactory;
 
+    public function student(){
 
-
-    public function contact(){
-
-        return $this->hasOne(Contact::class);
+        return $this->belongsTo(Student::class);
 
     }
 }
