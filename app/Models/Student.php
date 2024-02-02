@@ -16,4 +16,10 @@ class Student extends Model
         return $this->hasOne(Contact::class);
 
     }
+
+    public function teacher(){
+
+        return $this->belongsTo(Teacher::class);
+
+    }
 }

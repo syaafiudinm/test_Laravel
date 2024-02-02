@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('score');
+            $table->foreignId('teacher_id')->constrained('teachers');
             $table->timestamps();
         });
     }

@@ -6,10 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hi your address is {{$address}}</p>
-
-    @for ($i = 0; $i < 10; $i++)
-        <p>ini adalah angka {{$i}}<br></p>
-    @endfor
+    <p>your student is :</p>
+    @foreach ($students as $student)
+        <p>{{ $student->nama }}</p>
+    @endforeach
 </body>
 </html>
