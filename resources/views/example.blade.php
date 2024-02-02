@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <p>your student is :</p>
-    @foreach ($students as $student)
-        <p>{{ $student->nama }}</p>
+    <p>{{$student->nama}} : </p>
+    @foreach ($activities as $activity)
+        <p>{{ $activity->name }}</p>
     @endforeach
 </body>
 </html>
