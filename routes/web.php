@@ -18,6 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[StudentsController::class, 'index']);
 Route::get('/filter',[StudentsController::class, 'filter']);
 
-Route::get('/greeting/{id}',[StudentsController::class, 'show']);
+Route::get('/show/{id}',[StudentsController::class, 'show'])->name('show');
 
 

@@ -22,9 +22,8 @@ class StudentsController extends Controller
    }
  
    public function show($id){
-        $student = Student::find($id);
-        $activities = $student->activities;
-        return view('example', ['activities' => $activities, 'student' => $student]);
+      $student = Student::find($id);
+      return view('show', ['student' => $student ]);
    }
 
 }
