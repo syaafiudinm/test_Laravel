@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[StudentsController::class, 'index']);
 
 Route::get('/greeting/{id}',[StudentsController::class, 'show']);
 

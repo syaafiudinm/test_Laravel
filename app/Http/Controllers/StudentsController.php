@@ -9,6 +9,11 @@ use App\Models\Activity;
 
 class StudentsController extends Controller
 {
+
+   public function index(){
+      $students = Student::all();
+      return view('index', ['students' => $students]);
+   }
  
    public function show($id){
         $student = Student::find($id);
