@@ -9,7 +9,12 @@ class Student extends Model
 {
     use HasFactory;
 
-
+    protected $fillable = [
+        'nama',
+        'score',
+        'teacher_id'
+    ];
+   
 
     public function contact(){
 

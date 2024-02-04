@@ -7,6 +7,9 @@
     <title>Home</title>
 </head>
 <body>
+
+    <a href="{{route('create')}}">Tambah Data</a>
+
     <table border="1">
         <tr>
             <th>ID</th>
