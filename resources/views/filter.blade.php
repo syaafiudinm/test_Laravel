@@ -16,7 +16,7 @@
         @foreach ($students as $student)
             <tr>
                 <td>{{$student->id}}</td>
-                <td>{{$student->nama}}</td>
+                <td>{{$student->name}}</td>
                 <td>{{$student->score}}</td>
             </tr>
         @endforeach

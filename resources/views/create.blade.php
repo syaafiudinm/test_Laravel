@@ -14,7 +14,7 @@
     @endif
     <form action="{{route('store')}}" method="post">
         @csrf
-        <input type="text" name="nama" placeholder="name">
+        <input type="text" name="name" placeholder="name">
         <input type="number" name="score" placeholder="score">
         <button type="submit">Add</button>
         {{-- <input type="text" name="" placeholder="name">

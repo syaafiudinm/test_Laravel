@@ -7,7 +7,7 @@
 </head>
 <body>
     <p> ID : {{$student->id}}</p>
-    <p> name : {{$student->nama}}</p>
+    <p> name : {{$student->name}}</p>
     <p> score : {{$student->score}}</p>
 
     <p>activities : </p>

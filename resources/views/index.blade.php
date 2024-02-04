@@ -21,7 +21,7 @@
             <tr>
                 <td>{{$student->id}}</td>
                 <td>
-                    <a href="{{route('show', $student->id)}}">{{$student->nama}}</a>
+                    <a href="{{route('show', $student->id)}}">{{$student->name}}</a>
                 </td>
                 <td>{{$student->score}}</td>
                 <td>

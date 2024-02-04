@@ -34,12 +34,12 @@ class StudentsController extends Controller
    public function store(Request $request){
       
       $request->validate([
-         'nama' => 'required',
+         'name' => 'required',
          'score' => 'required'
       ]);
 
       Student::create([
-         'nama' => $request->nama,
+         'name' => $request->name,
          'score' => $request->score,
          'teacher_id' => 1
       ]);
@@ -54,7 +54,7 @@ class StudentsController extends Controller
 
    public function update(Request $request, Student $student){
       $student->update([
-         'nama' => $request->nama,
+         'name' => $request->name,
          'score' => $request->score
       ]);
 
