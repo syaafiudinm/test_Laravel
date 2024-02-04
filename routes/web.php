@@ -20,5 +20,7 @@ Route::get('/filter',[StudentsController::class, 'filter']);
 Route::get('/show/{id}',[StudentsController::class, 'show'])->name('show');
 Route::get('/create',[StudentsController::class, 'create'])->name('create');
 Route::post('create', [StudentsController::class, 'store'])->name('store');
+Route::get('edit/{student}', [StudentsController::class, 'edit'])->name('edit');
+Route::patch('/update/{student}', [StudentsController::class, 'update'])->name('update');
 
 

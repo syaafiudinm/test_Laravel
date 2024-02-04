@@ -48,4 +48,17 @@ class StudentsController extends Controller
 
    }
 
+   public function edit(Student $student){
+      return view('edit', compact('student'));
+   }
+
+   public function update(Request $request, Student $student){
+      $student->update([
+         'nama' => $request->nama,
+         'score' => $request->score
+      ]);
+
+      return redirect::route('index');
+   }
+
 }

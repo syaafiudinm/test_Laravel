@@ -15,6 +15,7 @@
             <th>ID</th>
             <th>Name</th>
             <th>Score</th>
+            <th>Action</th>
         </tr>
         @foreach ($students as $student)
             <tr>
@@ -23,6 +24,12 @@
                     <a href="{{route('show', $student->id)}}">{{$student->nama}}</a>
                 </td>
                 <td>{{$student->score}}</td>
+                <td>
+                    <form action="{{route('edit', $student)}}" method="get">
+                        @csrf
+                        <button type="submit">Edit</button>
+                    </form>
+                </td>
             </tr>
         @endforeach
     </table>
