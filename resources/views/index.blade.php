@@ -29,6 +29,11 @@
                         @csrf
                         <button type="submit">Edit</button>
                     </form>
+                    <form action="{{route('delete', $student)}}" method="post">
+                        @method('delete')
+                        @csrf
+                        <button type="submit" onclick="return confirm('anda yakin ingin menghapus data?');">hapus</button>
+                    </form>
                 </td>
             </tr>
         @endforeach

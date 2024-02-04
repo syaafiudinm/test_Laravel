@@ -22,5 +22,6 @@ Route::get('/create',[StudentsController::class, 'create'])->name('create');
 Route::post('create', [StudentsController::class, 'store'])->name('store');
 Route::get('edit/{student}', [StudentsController::class, 'edit'])->name('edit');
 Route::patch('/update/{student}', [StudentsController::class, 'update'])->name('update');
+Route::delete('/delete/{student}', [StudentsController::class, 'delete'])->name('delete');
 
 
